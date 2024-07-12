@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Icon - Sun</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .sun-icon {
+            width: 100px;
+            height: 100px;
+            background-color: #ffce00; /* Sun yellow */
+            border-radius: 50%; /* Rounded shape */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+        }
+
+        .sun-icon::before {
+            content: "";
+            width: 60px;
+            height: 60px;
+            background-color: #ffce00; /* Sun yellow */
+            border-radius: 50%; /* Rounded shape */
+            position: absolute;
+        }
+
+        .sun-icon::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff; /* White */
+            border-radius: 50%; /* Rounded shape */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .sun-icon .ray {
+            position: absolute;
+            width: 4px;
+            height: 30px;
+            background-color: #ffffff; /* White */
+            transform-origin: bottom center;
+        }
+
+        .sun-icon .ray:nth-child(1) {
+            transform: rotate(45deg);
+        }
+
+        .sun-icon .ray:nth-child(2) {
+            transform: rotate(90deg);
+        }
+
+        .sun-icon .ray:nth-child(3) {
+            transform: rotate(135deg);
+        }
+
+        .sun-icon .ray:nth-child(4) {
+            transform: rotate(180deg);
+        }
+
+        .sun-icon .ray:nth-child(5) {
+            transform: rotate(225deg);
+        }
+
+        .sun-icon .ray:nth-child(6) {
+            transform: rotate(270deg);
+        }
+
+        .sun-icon .ray:nth-child(7) {
+            transform: rotate(315deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="sun-icon">
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+    </div>
+</body>
+</html>
